@@ -34,3 +34,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.idea
+
+git filter-branch -f --env-filter \
+  "GIT_AUTHOR_NAME='ore88ore'; \
+   GIT_AUTHOR_EMAIL='dev.ore88ore@gmail.com'; \
+   GIT_COMMITTER_NAME='ore88ore'; \
+   GIT_COMMITTER_EMAIL='dev.ore88ore@gmail.com';" \
+  HEAD
